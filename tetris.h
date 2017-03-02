@@ -5,7 +5,7 @@
 ** Login   <Starkiller@epitech.net>
 ** 
 ** Started on  Mon Feb 27 12:50:10 2017 Benoit Bouton
-** Last update Thu Mar  2 11:49:41 2017 Benoit Bouton
+** Last update Thu Mar  2 15:21:58 2017 Benoit Bouton
 */
 
 #ifndef TETRIS_H_
@@ -21,10 +21,6 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
-void	usage();
-void	debug_mode(char **av);
-void	print_left(char **av);
-void	print_right(char **av);
 void	my_swap(char *a, char *b);
 int	my_strlen(char *str);
 int	my_high_strlen(char *str);

@@ -5,7 +5,7 @@
 ** Login   <Babonneau_A@epitech.net>
 ** 
 ** Started on  Mon Feb 27 15:20:29 2017 Babonneau Alexandre
-** Last update Thu Mar  2 11:35:33 2017 Benoit Bouton
+** Last update Thu Mar  2 15:36:41 2017 Benoit Bouton
 */
 
 #include "tetris.h"
@@ -13,11 +13,20 @@
 
 void	debug_mode(char **av)
 {
+  char	*left;
+  char	*right;
+  char	*turn;
+  char	*drop;
+
   my_printf("*** DEBUG MODE ***\n");
-  print_left(av);
-  print_right(av);
-  print_turn(av);
-  print_drop(av);
+  left = print_left(av);
+  my_printf("Key Left : %s\n", left);
+  right = print_right(av);
+  my_printf("Key Right : %s\n", right);
+  turn = print_turn(av);
+  my_printf("Key Turn : %s\n", turn);
+  drop = print_drop(av);
+  my_printf("Key Drop : %s\n", drop);
   print_quit(av);
   print_pause(av);
   print_next(av);
@@ -28,7 +37,7 @@ void	debug_mode(char **av)
   my_printf("Press any key to start Tetris\n");
 }
 
-void	print_left(char **av)
+char	*print_left(char **av)
 {
   int	i;
   int	j;
@@ -38,12 +47,13 @@ void	print_left(char **av)
   while (av[i] != '\0')
     {
       if (my_strcmp(av[i], "-kl") == 0)
-	my_printf("Key Left : %s\n", av[i + 1]);
+	return (av[i + 1]);
       i++;
     }
+  return ("^EOD");
 }
 
-void	print_right(char **av)
+char	*print_right(char **av)
 {
   int	i;
 
@@ -51,12 +61,13 @@ void	print_right(char **av)
   while (av[i] != '\0')
     {
       if (my_strcmp(av[i], "-kr") == 0)
-	my_printf("Key Right : %s\n", av[i + 1]);
+	return (av[i + 1]);
       i++;
     }
+  return ("^EOC");
 }
 
-void	print_turn(char **av)
+char	*print_turn(char **av)
 {
   int	i;
 
@@ -66,15 +77,16 @@ void	print_turn(char **av)
       if (my_strcmp(av[i], "-kt") == 0)
 	{
 	  if (my_strcmp(av[i + 1], " ") == 0)
-	    my_printf("Key Turn : (space)\n");
+	    return ("(space)");
 	  else
-	    my_printf("Key Turn : %s\n", av[i + 1]);
+	    return (av[i + 1]);
 	}
       i++;
     }
+  return ("^EOA");
 }
 
-void	print_drop(char **av)
+char	*print_drop(char **av)
 {
   int	i;
 
@@ -82,7 +94,8 @@ void	print_drop(char **av)
   while (av[i] != '\0')
     {
       if (my_strcmp(av[i], "-kd") == 0)
-	my_printf("Key Drop : %s\n", av[i + 1]);
+	return (av[i + 1]);
       i++;
     }
+  return ("^EOB");
 }

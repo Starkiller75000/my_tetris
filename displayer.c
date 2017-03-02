@@ -5,17 +5,23 @@
 ** Login   <Babonneau_A@epitech.net>
 ** 
 ** Started on  Mon Feb 27 16:26:00 2017 Babonneau Alexandre
-** Last update Thu Mar  2 12:48:03 2017 Babonneau Alexandre
+** Last update Thu Mar  2 15:38:35 2017 Benoit Bouton
 */
 
-#include "my.h"
-#include "tetris.h"
+//#include "my.h"
+//#include "tetris.h"
 
-int	display(char *str, char **tab, int j)
-{
-  int	high;
-  int	size_up;
-  int	i;
+/* int	display(char *str, char **tab, int j) */
+/* { */
+/*   int	high; */
+/*   int	size_up; */
+/*   int	i; */
+
+//int	display(char *str, char **tab, int j)
+//{
+//int	high;
+//int	size_up;
+//int	i;
 /* int     display(char *str, char **tab, int j) */
 /* { */
 /*   int   high; */

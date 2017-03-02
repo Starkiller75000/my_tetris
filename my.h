@@ -5,7 +5,7 @@
 ** Login   <Starkiller@epitech.net>
 ** 
 ** Started on  Mon Feb 27 13:11:27 2017 Benoit Bouton
-** Last update Thu Mar  2 13:40:08 2017 Benoit Bouton
+** Last update Thu Mar  2 15:36:51 2017 Benoit Bouton
 */
 
 #ifndef MY_H_
@@ -19,10 +19,10 @@ void	usage();
 
 /*debug.c*/
 void	debug_mode(char **av);
-void	print_left(char **av);
-void	print_right(char **av);
-void	print_turn(char **av);
-void	print_drop(char **av);
+char	*print_left(char **av);
+char	*print_right(char **av);
+char	*print_turn(char **av);
+char	*print_drop(char **av);
 
 /*debug1.c*/
 void	print_quit(char **av);

@@ -5,7 +5,7 @@
 ** Login   <Starkiller@epitech.net>
 ** 
 ** Started on  Mon Feb 27 16:35:11 2017 Benoit Bouton
-** Last update Wed Mar  1 14:59:37 2017 Benoit Bouton
+** Last update Thu Mar  2 15:17:37 2017 Benoit Bouton
 */
 
 #include "tetris.h"
@@ -19,7 +19,7 @@ void	print_quit(char **av)
   while (av[i] != '\0')
     {
       if (my_strcmp(av[i], "-kq") == 0)
-	my_printf("Key Quit : %s\n", av[i + 1]);
+	my_printf("Key Quit : %s\n", av[i + 1][0]);
       i++;
     }
 }
@@ -32,7 +32,7 @@ void	print_pause(char **av)
   while (av[i] != '\0')
     {
       if (my_strcmp(av[i], "-kp") == 0)
-	my_printf("Key Pause : %s\n", av[i + 1]);
+	my_printf("Key Pause : %s\n", av[i + 1][0]);
       i++;
     }
 }
