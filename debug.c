@@ -5,7 +5,7 @@
 ** Login   <Babonneau_A@epitech.net>
 ** 
 ** Started on  Mon Feb 27 15:20:29 2017 Babonneau Alexandre
-** Last update Thu Mar  2 15:58:50 2017 Benoit Bouton
+** Last update Thu Mar  2 16:33:00 2017 Benoit Bouton
 */
 
 #include "tetris.h"
@@ -50,10 +50,8 @@ void	debug_mode(char **av)
 char	*print_left(char **av)
 {
   int	i;
-  int	j;
 
   i = 1;
-  j = 0;
   while (av[i] != '\0')
     {
       if (my_strcmp(av[i], "-kl") == 0)

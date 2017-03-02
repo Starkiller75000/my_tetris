@@ -5,11 +5,21 @@
 ** Login   <Starkiller@epitech.net>
 ** 
 ** Started on  Mon Feb 27 13:11:27 2017 Benoit Bouton
-** Last update Thu Mar  2 16:14:42 2017 Benoit Bouton
+** Last update Thu Mar  2 16:32:39 2017 Benoit Bouton
 */
 
 #ifndef MY_H_
 #define MY_H_
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <ncurses.h>
+#include <dirent.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 
 /*libmyprintf.a*/
 int	my_printf(const char *s, ...);
@@ -42,7 +52,7 @@ char	*my_strcpy(char *dest, char *src);
 
 /*open_dir.c*/
 void	open_dir();
-static int	verif_tetrimino_ex(char *str, char *extension);
+int	verif_tetrimino_ex(char *str, char *extension);
 void	check_file_name();
 void	check_first(char *str);
 void	open_file(char *str);

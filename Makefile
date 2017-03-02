@@ -5,7 +5,7 @@
 ## Login   <Starkiller@epitech.net>
 ## 
 ## Started on  Mon Feb 27 12:25:48 2017 Benoit Bouton
-## Last update Thu Mar  2 16:06:42 2017 Benoit Bouton
+## Last update Thu Mar  2 16:29:49 2017 Benoit Bouton
 ##
 
 SRC	=	main.c			\
@@ -23,7 +23,7 @@ SRC	=	main.c			\
 
 OBJ	=	$(SRC:.c=.o)
 
-##CFLAGS	+=	-Wextra -Wall -Werror
+CFLAGS	+=	-Wextra -Wall -Werror
 
 NAME	=	tetris
 

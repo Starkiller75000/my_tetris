@@ -5,7 +5,7 @@
 ** Login   <Starkiller@epitech.net>
 ** 
 ** Started on  Tue Feb 28 14:26:28 2017 Benoit Bouton
-** Last update Wed Mar  1 13:53:55 2017 Benoit Bouton
+** Last update Thu Mar  2 16:33:14 2017 Benoit Bouton
 */
 
 #include "tetris.h"
@@ -13,7 +13,6 @@
 
 void	check_equal(char *str)
 {
-  char	*tmp;
   int	i;
 
   i = 0;

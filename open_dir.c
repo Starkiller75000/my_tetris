@@ -5,7 +5,7 @@
 ** Login   <Starkiller@epitech.net>
 ** 
 ** Started on  Tue Feb 28 15:17:51 2017 Benoit Bouton
-** Last update Thu Mar  2 16:07:57 2017 Benoit Bouton
+** Last update Thu Mar  2 16:34:35 2017 Benoit Bouton
 */
 
 #include "tetris.h"
@@ -31,7 +31,7 @@ void	open_dir()
     {
       if (file->d_name[0] != '.')
 	{
-	  if (ret = verif_tetrimino_ex(file->d_name, "tetrimino") == 1)
+	  if ((ret = verif_tetrimino_ex(file->d_name, "tetrimino")) == 1)
 	    i++;
 	}
     }
@@ -43,7 +43,7 @@ void	open_dir()
   my_printf("Tetriminos : %d\n", i);
 }
 
-static int	verif_tetrimino_ex(char *str, char *extension)
+int	verif_tetrimino_ex(char *str, char *extension)
 {
   int	i;
   char	*p;
@@ -76,7 +76,7 @@ void	check_file_name()
     {
       if (file->d_name[0] != '.')
 	{
-	  if (ret = verif_tetrimino_ex(file->d_name, "tetrimino") == 1)
+	  if ((ret = verif_tetrimino_ex(file->d_name, "tetrimino")) == 1)
 	    {
 	      check_first(file->d_name);
 	      open_file(file->d_name);
