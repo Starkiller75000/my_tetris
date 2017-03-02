@@ -5,10 +5,11 @@
 ** Login   <Babonneau_A@epitech.net>
 ** 
 ** Started on  Mon Feb 27 17:50:06 2017 Babonneau Alexandre
-** Last update Mon Feb 27 18:02:33 2017 Babonneau Alexandre
+** Last update Thu Mar  2 17:26:18 2017 Benoit Bouton
 */
 
 #include "tetris.h"
+#include "my.h"
 
 void		my_swap(char *a, char *b)
 {

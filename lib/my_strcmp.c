@@ -5,10 +5,11 @@
 ** Login   <Starkiller@epitech.net>
 ** 
 ** Started on  Mon Oct 10 18:41:38 2016 Bouton Benoit
-** Last update Mon Feb 27 15:23:05 2017 Benoit Bouton
+** Last update Thu Mar  2 17:23:20 2017 Benoit Bouton
 */
 
-#include "my.h"
+#include "../my.h"
+#include "../tetris.h"
 
 int	my_strcmp(char *s1, char *s2)
 {

@@ -5,8 +5,11 @@
 ** Login   <Starkiller@epitech.net>
 ** 
 ** Started on  Mon Oct 10 08:52:55 2016 Bouton Benoit
-** Last update Thu Mar  2 13:38:18 2017 Benoit Bouton
+** Last update Thu Mar  2 17:28:26 2017 Benoit Bouton
 */
+
+#include "../my.h"
+#include "../tetris.h"
 
 char	 *my_strcpy(char *dest, char *src)
 {

@@ -5,11 +5,11 @@
 ** Login   <Starkiller@epitech.net>
 ** 
 ** Started on  Wed Mar  1 16:49:41 2017 Benoit Bouton
-** Last update Wed Mar  1 16:54:23 2017 Benoit Bouton
+** Last update Thu Mar  2 17:27:53 2017 Benoit Bouton
 */
 
-#include "tetris.h"
-#include "my.h"
+#include "../tetris.h"
+#include "../my.h"
 
 char	*my_strrchr(const char *s, int c)
 {

@@ -5,10 +5,11 @@
 ** Login   <Starkiller@epitech.net>
 ** 
 ** Started on  Wed Mar  1 14:40:36 2017 Benoit Bouton
-** Last update Thu Mar  2 16:09:04 2017 Benoit Bouton
+** Last update Thu Mar  2 17:26:33 2017 Benoit Bouton
 */
 
 #include "tetris.h"
+#include "my.h"
 
 void	chrono()
 {
