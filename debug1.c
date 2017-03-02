@@ -5,13 +5,13 @@
 ** Login   <Starkiller@epitech.net>
 ** 
 ** Started on  Mon Feb 27 16:35:11 2017 Benoit Bouton
-** Last update Thu Mar  2 15:17:37 2017 Benoit Bouton
+** Last update Thu Mar  2 16:08:45 2017 Benoit Bouton
 */
 
 #include "tetris.h"
 #include "my.h"
 
-void	print_quit(char **av)
+char	print_quit(char **av)
 {
   int	i;
 
@@ -19,12 +19,13 @@ void	print_quit(char **av)
   while (av[i] != '\0')
     {
       if (my_strcmp(av[i], "-kq") == 0)
-	my_printf("Key Quit : %s\n", av[i + 1][0]);
+	return (av[i + 1][0]);
       i++;
     }
+  return ('q');
 }
 
-void	print_pause(char **av)
+char	print_pause(char **av)
 {
   int	i;
 
@@ -32,12 +33,13 @@ void	print_pause(char **av)
   while (av[i] != '\0')
     {
       if (my_strcmp(av[i], "-kp") == 0)
-	my_printf("Key Pause : %s\n", av[i + 1][0]);
+	return (av[i + 1][0]);
       i++;
     }
+  return ('p');
 }
 
-void	print_next(char **av)
+char	*print_next(char **av)
 {
   int	i;
 
@@ -46,12 +48,13 @@ void	print_next(char **av)
     {
       if (my_strcmp(av[i], "-w") == 0 ||
 	  my_strcmp(av[i], "--without-next") == 0)
-	my_printf("Next : No\n");
+	return ("Next : No\n");
       i++;
     }
+  return ("Next : yes\n");
 }
 
-void	print_level(char **av)
+char	print_level(char **av)
 {
   int	i;
 
@@ -59,20 +62,22 @@ void	print_level(char **av)
   while (av[i] != '\0')
     {
       if (my_strcmp(av[i], "-l") == 0)
-	my_printf("Level : %s\n", av[i + 1]);
+	return (av[i + 1][0]);
       i++;
     }
+  return ('1');
 }
 
-void	print_size(char **av)
+char	*print_size(char **av)
 {
   int	i;
 
   i = 1;
   while (av[i] != '\0')
     {
-      if (strcmp(av[i], "--map-size=") == 0)
+      if (my_strcmp(av[i], "--map-size=") == 0)
 	check_equal(av[i]);
       i++;
     }
+  return ("20*10");
 }

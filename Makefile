@@ -5,7 +5,7 @@
 ## Login   <Starkiller@epitech.net>
 ## 
 ## Started on  Mon Feb 27 12:25:48 2017 Benoit Bouton
-## Last update Thu Mar  2 13:40:35 2017 Benoit Bouton
+## Last update Thu Mar  2 16:06:42 2017 Benoit Bouton
 ##
 
 SRC	=	main.c			\
@@ -18,7 +18,8 @@ SRC	=	main.c			\
 		open_dir.c		\
 		debug_mode_base.c	\
 		lib/my_strrchr.c	\
-		lib/my_strcpy.c
+		lib/my_strcpy.c		\
+		lib/my_strcat.c
 
 OBJ	=	$(SRC:.c=.o)
 

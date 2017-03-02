@@ -5,7 +5,7 @@
 ** Login   <Babonneau_A@epitech.net>
 ** 
 ** Started on  Mon Feb 27 16:26:00 2017 Babonneau Alexandre
-** Last update Thu Mar  2 15:38:35 2017 Benoit Bouton
+** Last update Thu Mar  2 16:11:48 2017 Benoit Bouton
 */
 
 //#include "my.h"
@@ -27,7 +27,6 @@
 /*   int   high; */
 /*   int   size_up; */
 /*   int   i; */
-
 /*   i = -1; */
 /*   high = my_lines_strlen(str); */
 /*   size_up = my_high_strlen(str); */

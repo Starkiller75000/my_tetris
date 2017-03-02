@@ -5,7 +5,7 @@
 ** Login   <Starkiller@epitech.net>
 ** 
 ** Started on  Tue Feb 28 15:17:51 2017 Benoit Bouton
-** Last update Thu Mar  2 13:46:42 2017 Benoit Bouton
+** Last update Thu Mar  2 16:07:57 2017 Benoit Bouton
 */
 
 #include "tetris.h"
@@ -15,10 +15,10 @@
 
 void	open_dir()
 {
-  int	i;
   DIR	*dir;
   struct dirent	*file;
   int	ret;
+  int	i;
 
   i = 0;
   dir = opendir("./tetriminos");
@@ -53,7 +53,7 @@ static int	verif_tetrimino_ex(char *str, char *extension)
       p = my_strrchr(str, '.');
       if (p != NULL)
 	{
-	  if (strcmp(++p, extension) == 0)
+	  if (my_strcmp(++p, extension) == 0)
 	    i = 1;
 	}
     }
@@ -118,7 +118,7 @@ void	open_file(char *str)
 
   i = 5;
   my_strcpy(filepath, "./tetriminos/");
-  strcat(filepath , str);
+  my_strcat(filepath , str);
   buf = malloc(sizeof(char) * SIZE + 1);
   fs = fopen(filepath, "r");
   if (fs == NULL)
