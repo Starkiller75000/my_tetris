@@ -5,7 +5,7 @@
 ** Login   <Starkiller@epitech.net>
 ** 
 ** Started on  Mon Feb 27 13:11:27 2017 Benoit Bouton
-** Last update Thu Mar  2 16:32:39 2017 Benoit Bouton
+** Last update Fri Mar  3 15:25:30 2017 Benoit Bouton
 */
 
 #ifndef MY_H_
@@ -20,6 +20,7 @@
 #include <unistd.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+#include <ncurses/curses.h>
 
 /*libmyprintf.a*/
 int	my_printf(const char *s, ...);
